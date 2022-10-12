@@ -60,6 +60,12 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs \
     init.target
 
+# Keymaster
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.crypto.allow_encrypt_override=true \
+    ro.crypto.volume.filenames_mode="aes-256-cts" \
+    ro.hardware.keystore_desede=true
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
