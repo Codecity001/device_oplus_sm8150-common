@@ -61,7 +61,8 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/vintf/manifest.xml
+    $(DEVICE_PATH)/configs/vintf/manifest.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest-oplus.xml
 
 ODM_MANIFEST_FILES += \
     $(DEVICE_PATH)/configs/vintf/manifest-qva.xml
