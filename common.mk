@@ -46,6 +46,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.netflix.bsp_rev=Q855-16947-1
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
