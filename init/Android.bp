@@ -33,3 +33,18 @@ oplus_msmnile_init_prebuilt_etc {
     vendor: true,
     ramdisk_available: true,
 }
+
+// scripts
+
+sh_binary {
+    name: "init.qti.dcvs",
+    src: "init.qti.dcvs.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
