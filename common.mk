@@ -40,3 +40,6 @@ TARGET_BOARD_PLATFORM := msmnile
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
+
+# Vendor
+$(call inherit-product, vendor/oneplus/sm8150-common/sm8150-common-vendor.mk)
