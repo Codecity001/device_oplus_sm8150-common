@@ -46,6 +46,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Gatekeeper
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.gatekeeper.disable_spu=true
+
 # GPS
 LOC_HIDL_VERSION = 4.0
 
