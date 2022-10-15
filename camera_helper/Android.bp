@@ -1,0 +1,17 @@
+android_app {
+    name: "OnePlusCameraHelper",
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    platform_apis: true,
+    privileged: true,
+
+    resource_dirs: ["res"],
+    system_ext_specific: true,
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+}
