@@ -84,6 +84,7 @@ soong_config_string_variable {
 
 oplus_msmnile_init_prebuilt_etc {
     name: "fstab.qcom",
+    filename: "fstab.qcom" ,
     soong_config_variables: {
         PARTITION_SCHEME: {
             dynamic: {
@@ -95,5 +96,4 @@ oplus_msmnile_init_prebuilt_etc {
         },
     },
     vendor: true,
-    ramdisk_available: true,
 }
